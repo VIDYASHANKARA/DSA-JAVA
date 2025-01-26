@@ -29,10 +29,55 @@ public class Main{
         System.out.println("The second largest element is : "+ secondLargest);
     }
 }
-//3]
-//4]
-//5]
-//6]
+//3]Check if the array is sorted
+public class Main
+{
+	public static void main(String[] args) {
+		int[] a={1,2,3,4,5,6,7,8,9,10};
+		boolean ans=true;
+		for(int i=0;i<a.length-1;i++){
+		    if(a[i]>a[i+1]){
+		        ans=false;
+		    }
+		}
+		if(ans){
+		    System.out.println("The array is sorted");
+		}
+		else{
+		    System.out.println("The array is not sorted");
+		}
+	}
+}
+
+//4]Remove duplicates from Sorted array
+public class Main{
+    public static void main(String[] args){
+        int[] a={1,1,1,1,2,2,2,2,3,3,4,4,56,6,7,78,8,89};
+        int f=0;
+        int temp=0;
+        int count=0;
+        for(int i=0;i<a.length;i++){
+            if(a[i]!=a[f]){
+                f+=1;
+                temp=a[f];
+                a[f]=a[i];
+                a[i]=temp;
+                count+=1;
+            }
+        }
+        if(count!=0){
+            for(int i=0;i<count+1;i++){
+            System.out.println(a[i]);
+            }
+        }else{
+            System.out.println("The array is empty.");
+        }
+        
+    }
+}
+//5]Left Rotate an array by one place
+//6]Left rotate an array by D places
+
 //7]
 //8]
 //9]
