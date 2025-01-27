@@ -77,6 +77,24 @@ public class Main{
 }
 //5]Left Rotate an array by one place
 //6]Left rotate an array by D places
+public class Main
+{
+	public static void main(String[] args) {
+		int[] a={1,2,3,4,5,6,7,8};
+		int d=2;
+		int[] b=new int[a.length];
+		for(int i=d;i<a.length;i++){
+		    b[i-d]=a[i];
+		}
+		for(int i=a.length-d;i<a.length;i++){
+		    b[i]=a[d-i];
+		}
+		for(int i=0;i<b.length;i++){
+		    System.out.println(b[i]);
+		}
+		
+	}
+}
 
 //7]
 //8]
